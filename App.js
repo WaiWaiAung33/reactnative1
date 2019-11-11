@@ -15,59 +15,27 @@ export default class App extends React.Component {
         </View>
         
         <View style={style.first}>
-          <View
-            style={{
-              backgroundColor: "powderblue",
-              width: 150,
-              height: 100,
-              borderRadius: 2
-            }}
-          >
-            <Text style={{marginTop:50,marginLeft:10}}>HR</Text>
+          <View style={style.second}>
+            <Text style={style.text}>HR</Text>
           </View>
-          <View
-            style={{
-              backgroundColor: "powderblue",
-              width: 150,
-              height: 100,
-              borderRadius: 2
-            }}
+          <View style={style.second}
           >
-            <Text style={{marginTop:50,marginLeft:10}}>Finance</Text>
+            <Text style={style.text}>Finance</Text>
           </View>
         </View>
-        <View style={style.second}>
-          <View
-            style={{
-              backgroundColor: "powderblue",
-              width: 150,
-              height: 100,
-              borderRadius: 2
-            }}
-          >
-            <Text style={{marginTop:50,marginLeft:10}}>PM</Text>
+
+        <View style={style.first}>
+          <View style={style.second}>
+            <Text style={style.text}>PM</Text>
           </View>
-          <View
-            style={{
-              backgroundColor: "powderblue",
-              width: 150,
-              height: 100,
-              borderRadius: 2
-            }}
-          >
-            <Text style={{marginTop:50,marginLeft:10}}>UL/UX</Text>
+          <View style={style.second} >
+            <Text style={style.text}>UL/UX</Text>
           </View>
         </View>
-        <View style={style.third}>
-          <View
-            style={{
-              backgroundColor: "powderblue",
-              width: 150,
-              height: 100,
-              borderRadius: 2
-            }}
-          >
-            <Text style={{marginTop:50,marginLeft:10}}>Teachinh</Text>
+
+        <View style={style.first}>
+          <View style={style.second}>
+            <Text style={style.text}>Teachinh</Text>
           </View>
         </View>
         
@@ -79,8 +47,8 @@ export default class App extends React.Component {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#242132",
-  
+    backgroundColor: "black",
+    paddingHorizontal:20
 
   },
   image: {
@@ -88,26 +56,26 @@ const style = StyleSheet.create({
     marginTop: 40,
     marginLeft: 20
   },
-  first: {
-    height:120,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginLeft: 20,
-    marginRight: 20,
-    paddingBottom:10
+ 
+  text:{
+    marginTop:70,
+    marginLeft:10,
+    color:"white"
   },
-  second: {
-    height:120,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginLeft: 20,
-    marginRight: 20
-  },
-  third: {
+  first:{
     flex:1,
-    flexDirection: "row",
+    flexDirection:"row",
+    justifyContent:"space-between",
+   marginVertical:10
 
-    marginLeft: 20
   },
+  second:{
+   
+      backgroundColor: "#242132",
+      width:"45%",
+      height: 130,
+      borderRadius: 5
+    
+  }
  
 });
